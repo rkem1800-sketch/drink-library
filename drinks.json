@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Dreams Plum True",
+    "spirit": "Gin",
+    "ingredients": "Bombay Sapphire gin, plum, ginger, sage, lemon, egg white, plum bitters",
+    "type": "Seasonal",
+    "price": 14,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Sword Coast Special",
+    "spirit": "Rum",
+    "ingredients": "End of Days barrel-rested rum, Sandeman ruby port, Amaro Averna, orange, lime, cinnamon, vanilla, Angostura bitters, orange bitters",
+    "type": "Seasonal",
+    "price": 16,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Whiskey Powers",
+    "spirit": "Bourbon",
+    "ingredients": "Maker's Mark bourbon, jalapeño agave, lime, cinnamon, vanilla, egg white",
+    "type": "Seasonal",
+    "price": 14,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": "Made at home. Elijah Craig works too. 2 oz bourbon, 3/4 oz lime, 3/4 oz syrup, 1 egg white, dry shake then shake with ice."
+  },
+  {
+    "name": "Pomfoolery",
+    "spirit": "Tequila",
+    "ingredients": "Lunazul tequila, Domaine de Canton, pomegranate, champagne, lemon, smoked rosemary",
+    "type": "Seasonal",
+    "price": 12,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Envy",
+    "spirit": "Vodka",
+    "ingredients": "Tito's vodka, Malibu coconut rum, amaretto, lemon, pandan",
+    "type": "Seasonal",
+    "price": 12,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Jalapeño Margarita",
+    "spirit": "Tequila",
+    "ingredients": "Lunazul blanco tequila, jalapeño agave, lime, Tajín rim",
+    "type": "House",
+    "price": 12,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": "Uses the same jalapeño agave syrup as the Whiskey Powers."
+  },
+  {
+    "name": "Strawberry Stick & Poke",
+    "spirit": "Vodka",
+    "ingredients": "Stoli vanilla vodka, Frangelico, Kahlúa, strawberry, hand-whipped cream",
+    "type": "Dessert",
+    "price": 14,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Ambrosia",
+    "spirit": "Vodka",
+    "ingredients": "Stoli vanilla vodka, ChocoLat, crème de cacao, Kahlúa, heavy cream, chocolate bitters",
+    "type": "Dessert",
+    "price": 14,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Campfire Coffee",
+    "spirit": "Vodka",
+    "ingredients": "Stoli vanilla vodka, crème de cacao, Baileys, hot coffee, toasted marshmallow",
+    "type": "Dessert",
+    "price": 12,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  },
+  {
+    "name": "Peppermint Bark Martini",
+    "spirit": "Vodka",
+    "ingredients": "Stoli vanilla vodka, Rumple Minze peppermint liqueur, Mozart chocolate liqueur, crème de cacao, heavy cream",
+    "type": "Dessert",
+    "price": 14,
+    "source": "Bar menu photo, Oct 10, 2026",
+    "notes": ""
+  }
+]
