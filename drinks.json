@@ -4,89 +4,428 @@
     "spirit": "Gin",
     "ingredients": "Bombay Sapphire gin, plum, ginger, sage, lemon, egg white, plum bitters",
     "type": "Seasonal",
-    "price": 14,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Bombay Sapphire gin"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "plum syrup (or 1/2 oz plum purée + 1/4 oz simple syrup)"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "ginger syrup (or 1 barspoon fresh ginger juice)"
+      },
+      {
+        "amount": "2",
+        "item": "fresh sage leaves"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "plum bitters (Fee Brothers, or berry bitters)"
+      },
+      {
+        "amount": "1",
+        "item": "egg white"
+      }
+    ],
+    "method": [
+      "If you need plum syrup, simmer 1/2 cup chopped ripe plum with 1/2 cup sugar and 1/2 cup water for about 8 minutes (add 3 slices of ginger for the last 3 minutes if you don't have ginger syrup), then strain and cool.",
+      "Dry-shake gin, lemon, plum syrup, ginger syrup, sage leaves, plum bitters, and egg white for 15 seconds.",
+      "Add ice and shake 15 seconds more.",
+      "Double-strain into a chilled coupe."
+    ],
+    "garnish": "A sage leaf, and a thin plum slice if you have one"
   },
   {
     "name": "Sword Coast Special",
     "spirit": "Rum",
     "ingredients": "End of Days barrel-rested rum, Sandeman ruby port, Amaro Averna, orange, lime, cinnamon, vanilla, Angostura bitters, orange bitters",
     "type": "Seasonal",
-    "price": 16,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "Any good barrel-aged rum stands in for End of Days.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "barrel-aged rum (End of Days, or any barrel-rested rum)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Sandeman ruby port"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Amaro Averna"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh orange juice"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "cinnamon-vanilla syrup"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "1 dash",
+        "item": "orange bitters"
+      }
+    ],
+    "method": [
+      "Make a quick cinnamon-vanilla syrup: simmer 1/2 cup sugar, 1/2 cup water, and 2 cinnamon sticks for 5 minutes; stir in 1/2 tsp vanilla off the heat, then cool and strain.",
+      "Shake rum, ruby port, Averna, orange, lime, syrup, and both bitters with ice for 15 seconds.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Orange twist and a cinnamon stick"
   },
   {
     "name": "Whiskey Powers",
     "spirit": "Bourbon",
     "ingredients": "Maker's Mark bourbon, jalapeño agave, lime, cinnamon, vanilla, egg white",
     "type": "Seasonal",
-    "price": 14,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": "Made at home. Elijah Craig works too. 2 oz bourbon, 3/4 oz lime, 3/4 oz syrup, 1 egg white, dry shake then shake with ice."
+    "notes": "Made at home. Elijah Craig works too.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "bourbon (Maker's Mark or Elijah Craig)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "jalapeño-cinnamon-vanilla agave syrup"
+      },
+      {
+        "amount": "1",
+        "item": "egg white"
+      }
+    ],
+    "method": [
+      "Make the jalapeño-cinnamon-vanilla agave syrup (see the Calculator tab): simmer 1/2 cup agave, 1/2 cup water, 1 sliced jalapeño, and 2 cinnamon sticks; stir in 1/2 tsp vanilla off the heat, then cool and strain. About 8 oz per batch.",
+      "Dry-shake bourbon, lime, syrup, and egg white for 15 seconds.",
+      "Add ice and shake 15 seconds more.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Lime wheel, jalapeño slice, or a dusting of cinnamon"
   },
   {
     "name": "Pomfoolery",
     "spirit": "Tequila",
     "ingredients": "Lunazul tequila, Domaine de Canton, pomegranate, champagne, lemon, smoked rosemary",
     "type": "Seasonal",
-    "price": 12,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "To smoke the rosemary, torch a sprig until it smolders and rest it on the glass.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Lunazul tequila"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Domaine de Canton"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "unsweetened pomegranate juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "2 oz",
+        "item": "champagne, to top"
+      }
+    ],
+    "method": [
+      "Shake tequila, Domaine de Canton, pomegranate juice, and lemon with ice for 15 seconds.",
+      "Strain into a chilled coupe.",
+      "Top with champagne.",
+      "Torch a rosemary sprig until it smokes and rest it on the glass."
+    ],
+    "garnish": "Smoked rosemary sprig"
   },
   {
     "name": "Envy",
     "spirit": "Vodka",
     "ingredients": "Tito's vodka, Malibu coconut rum, amaretto, lemon, pandan",
     "type": "Seasonal",
-    "price": 12,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Tito's vodka"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Malibu coconut rum"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "amaretto"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "pandan syrup"
+      }
+    ],
+    "method": [
+      "Make pandan syrup: simmer 1/2 cup sugar and 1/2 cup water with 8 pandan leaves for 5 minutes, then cool and strain. If you can't find leaves, stir 1/8 tsp pandan extract into 1/2 cup cooled simple syrup.",
+      "Shake vodka, Malibu, amaretto, lemon, and pandan syrup with ice for 15 seconds.",
+      "Strain into a highball over fresh ice."
+    ],
+    "garnish": "Lemon wheel or a short pandan leaf"
   },
   {
     "name": "Jalapeño Margarita",
     "spirit": "Tequila",
     "ingredients": "Lunazul blanco tequila, jalapeño agave, lime, Tajín rim",
     "type": "House",
-    "price": 12,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": "Uses the same jalapeño agave syrup as the Whiskey Powers."
+    "notes": "Uses the same jalapeño-cinnamon-vanilla agave syrup as the Whiskey Powers.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Lunazul blanco tequila"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "jalapeño-cinnamon-vanilla agave syrup"
+      }
+    ],
+    "method": [
+      "Use the same jalapeño-cinnamon-vanilla agave syrup as the Whiskey Powers (see the Calculator tab).",
+      "Rim a rocks glass with lime and Tajín.",
+      "Shake tequila, lime, and syrup with ice for 15 seconds.",
+      "Strain over fresh ice in the rimmed rocks glass."
+    ],
+    "garnish": "Tajín rim, plus a lime wheel or jalapeño slice"
   },
   {
     "name": "Strawberry Stick & Poke",
     "spirit": "Vodka",
     "ingredients": "Stoli vanilla vodka, Frangelico, Kahlúa, strawberry, hand-whipped cream",
     "type": "Dessert",
-    "price": 14,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Stoli vanilla vodka"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Frangelico"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Kahlúa"
+      },
+      {
+        "amount": "3",
+        "item": "ripe strawberries, muddled (or 3/4 oz strawberry purée)"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup (skip if using sweetened purée)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "heavy cream, hand-whipped to a soft float"
+      }
+    ],
+    "method": [
+      "Muddle the strawberries with the simple syrup in a shaker (or start with strawberry purée and skip the extra syrup if it's already sweet).",
+      "Add vodka, Frangelico, and Kahlúa; shake with ice for 15 seconds.",
+      "Double-strain into a chilled coupe.",
+      "Softly whip the cold cream to a pourable ribbon and float it on top."
+    ],
+    "garnish": "A strawberry half, or a light dusting of cocoa"
   },
   {
     "name": "Ambrosia",
     "spirit": "Vodka",
     "ingredients": "Stoli vanilla vodka, ChocoLat, crème de cacao, Kahlúa, heavy cream, chocolate bitters",
     "type": "Dessert",
-    "price": 14,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "ChocoLat is a chocolate liqueur; Godiva, Mozart, or another chocolate liqueur works.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Stoli vanilla vodka"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "ChocoLat (or another chocolate liqueur)"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "crème de cacao"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Kahlúa"
+      },
+      {
+        "amount": "1 oz",
+        "item": "heavy cream"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "chocolate bitters"
+      }
+    ],
+    "method": [
+      "Shake vodka, ChocoLat, crème de cacao, Kahlúa, cream, and chocolate bitters with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Shaved chocolate, or a few extra drops of chocolate bitters on the cream"
   },
   {
     "name": "Campfire Coffee",
     "spirit": "Vodka",
     "ingredients": "Stoli vanilla vodka, crème de cacao, Baileys, hot coffee, toasted marshmallow",
     "type": "Dessert",
-    "price": 12,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "mug",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Stoli vanilla vodka"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "crème de cacao"
+      },
+      {
+        "amount": "1 oz",
+        "item": "Baileys"
+      },
+      {
+        "amount": "4 oz",
+        "item": "hot coffee"
+      },
+      {
+        "amount": "1",
+        "item": "marshmallow, toasted"
+      }
+    ],
+    "method": [
+      "Add vodka, crème de cacao, and Baileys to a pre-warmed mug.",
+      "Top with hot coffee and stir.",
+      "Toast a marshmallow over a flame until browned and perch it on the rim, or float it on the drink."
+    ],
+    "garnish": "Toasted marshmallow"
   },
   {
     "name": "Peppermint Bark Martini",
     "spirit": "Vodka",
     "ingredients": "Stoli vanilla vodka, Rumple Minze peppermint liqueur, Mozart chocolate liqueur, crème de cacao, heavy cream",
     "type": "Dessert",
-    "price": 14,
     "source": "Bar menu photo, Oct 10, 2026",
-    "notes": ""
+    "notes": "Rumple Minze is intense; keep it at 1/2 oz so the chocolate can keep up.",
+    "place": {
+      "name": "Unknown bar (menu photo)",
+      "city": ""
+    },
+    "glass": "martini",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Stoli vanilla vodka"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Rumple Minze peppermint liqueur"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Mozart chocolate liqueur"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "crème de cacao"
+      },
+      {
+        "amount": "1 oz",
+        "item": "heavy cream"
+      }
+    ],
+    "method": [
+      "Shake vodka, Rumple Minze, Mozart chocolate liqueur, crème de cacao, and cream with ice for 15 seconds.",
+      "Strain into a chilled martini glass."
+    ],
+    "garnish": "Shaved chocolate or a pinch of crushed peppermint"
   }
 ]

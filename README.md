@@ -27,10 +27,16 @@ Each drink object looks like:
   "spirit": "Bourbon",
   "ingredients": "Maker's Mark bourbon, jalapeño agave, lime, cinnamon, vanilla, egg white",
   "type": "Seasonal",
-  "price": 14,
   "source": "Bar menu photo, Oct 10, 2026",
-  "notes": "Optional tasting or recipe notes."
+  "notes": "Optional tasting or recipe notes.",
+  "place": { "name": "Restaurant name", "city": "City", "address": "optional street address" },
+  "glass": "rocks",
+  "recipe": [{ "amount": "2 oz", "item": "bourbon" }],
+  "method": ["Dry-shake, then shake with ice."],
+  "garnish": "Lime wheel"
 }
 ```
+
+Recipes in the app are marked **Home recipe** — they're our versions, not a bar's official spec. Filter the library by spirit or by restaurant (`place.name`).
 
 The starting ten drinks are from a bar menu photo dated Oct 10, 2026.

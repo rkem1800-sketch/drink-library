@@ -206,14 +206,22 @@ h1.display {
 }
 .card-visual svg { height: 108px; width: auto; }
 .card-meta { position: relative; z-index: 1; margin-top: auto; }
-.card .price {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.place-line {
+  margin: 0 0 6px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.filter-label {
+  margin: 0 0 4px;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
   font-weight: 600;
-  font-size: 0.8rem;
-  color: var(--gold-2);
-  z-index: 2;
 }
 .card h2 {
   font-family: var(--serif);
@@ -313,13 +321,13 @@ h1.display {
   -webkit-overflow-scrolling: touch;
 }
 .sheet-visual {
-  height: 148px;
+  height: 120px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   margin: 0 0 8px;
 }
-.sheet-visual svg { height: 140px; width: auto; filter: drop-shadow(0 8px 24px var(--glow)); }
+.sheet-visual svg { height: 114px; width: auto; filter: drop-shadow(0 8px 24px var(--glow)); }
 .sheet-top {
   display: flex;
   justify-content: space-between;
@@ -334,11 +342,92 @@ h1.display {
   margin: 0;
   line-height: 1.1;
 }
-.sheet .price-lg {
-  font-family: var(--serif);
-  font-size: 1.6rem;
-  color: var(--gold);
+.sheet-top { padding-right: 36px; }
+.home-badge {
+  display: inline-block;
+  margin: 10px 0 0;
+  border: 1px solid var(--gold);
+  color: var(--gold-2);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   font-weight: 600;
+}
+.sheet-place {
+  margin: 10px 0 0;
+  font-size: 0.88rem;
+  color: #e6d8c0;
+}
+.sheet-place a {
+  color: var(--gold);
+  margin-left: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.glass-line {
+  margin: 10px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.glass-line strong { color: #e6d8c0; font-weight: 600; }
+.scale-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 16px 0 8px;
+}
+.scale-row h3, .sheet-section h3 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.sheet-section { margin: 14px 0 0; }
+.scale {
+  display: flex;
+  background: var(--elev);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.scale button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.scale button[aria-pressed="true"] {
+  background: var(--gold);
+  color: #1a1208;
+  box-shadow: 0 0 16px var(--glow);
+}
+.recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recipe-list li {
+  display: grid;
+  grid-template-columns: 6.4em 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+.recipe-list li:last-child { border-bottom: 0; }
+.recipe-list .amt {
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-align: right;
+  font-size: 0.88rem;
 }
 .close-btn {
   position: absolute;
@@ -613,11 +702,6 @@ h1.display {
 .shop-list label.done span.item-name,
 .shop-list label.done { color: var(--muted); text-decoration: line-through; }
 .where { display: block; color: var(--muted); font-size: 0.75rem; text-decoration: none; }
-.total {
-  margin: 10px 0 0;
-  font-weight: 700;
-  color: var(--gold);
-}
 
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .steps li {
@@ -672,6 +756,8 @@ input:focus, button:focus-visible {
         <input type="search" id="search" placeholder="Search name, ingredients, notes" autocomplete="off">
       </div>
       <div class="chips" id="spirit-chips" role="toolbar" aria-label="Filter by spirit"></div>
+      <p class="filter-label" id="place-label">Places</p>
+      <div class="chips" id="place-chips" role="toolbar" aria-label="Filter by restaurant"></div>
       <p class="count" id="count"></p>
       <div class="grid" id="library-body"></div>
     </section>
@@ -871,10 +957,6 @@ input:focus, button:focus-visible {
       return '<svg width="13" height="16" viewBox="0 0 24 28" fill="currentColor" aria-hidden="true"><path d="M13 2c.4 2.2 2.2 3.1 3.8 2.8-.3 1.2-1.4 2-2.6 2.2 4.2 1.3 7.2 5.4 6.2 10.4C19.2 23.4 15 27 11 27S2.8 23.4 1.6 17.4C.6 12.4 3.8 8 9.4 7c.2-1.4.2-3.2-1.2-4.6 1.8-.2 3.6.6 4.8 3.6z"/><path d="M11.6 1.2c1.6-1.8 4.4-1 4.6 1.2-1.6.1-3 .8-3.6 2.2-.6-1.4-1-2.6-1-3.4z" opacity=".9"/></svg>';
     }
 
-    function money(n) {
-      return "$" + n.toFixed(2);
-    }
-
     function fmtOz(n) {
       return Number.isInteger(n) ? String(n) : String(Math.round(n * 100) / 100);
     }
@@ -919,12 +1001,12 @@ input:focus, button:focus-visible {
       const checked = getChecked();
       const items = [
         { id: "bourbon", html: "Elijah Craig or Maker's Mark bourbon — " + state.bottles + " × 750 ml<span class='where'>ABC store. Elijah Craig works great; if it is Barrel Proof, pull the pour back a little or add a splash of lime.</span>" },
-        { id: "limes", html: "Fresh large limes — " + state.limes + " (" + state.limePacks + " pack" + (state.limePacks === 1 ? "" : "s") + " of 3 for $1.00) · " + money(state.limePacks * PRICES.limePack) + "<span class='where'>Produce</span>" },
-        { id: "jalapenos", html: "Fresh jalapeño peppers — " + state.jalapenos + " (one per syrup batch) · " + money(state.jalapenos * PRICES.jalapeno) + " <span class='where'>Produce · $0.21 each</span>" },
-        { id: "agave", html: "Simple Truth Organic Blue Agave Nectar — 1 bottle · $5.99<span class='where'>Aisle 4</span>" },
-        { id: "cinnamon", html: "Badia Cinnamon Sticks — 1 jar · $1.49<span class='where'>Aisle 1</span>" },
-        { id: "vanilla", html: "Private Selection Pure Vanilla Extract — 1 bottle · $5.49<span class='where'>Aisle 4</span>" },
-        { id: "eggs", html: "Eggland's Best Large Eggs — " + state.eggDozens + " dozen · " + money(state.eggDozens * PRICES.eggs) + "<span class='where'>Dairy · $3.99 each</span>" }
+        { id: "limes", html: "Fresh large limes — " + state.limes + "<span class='where'>Produce</span>" },
+        { id: "jalapenos", html: "Fresh jalapeño peppers — " + state.jalapenos + " (one per syrup batch)<span class='where'>Produce</span>" },
+        { id: "agave", html: "Simple Truth Organic Blue Agave Nectar — 1 bottle<span class='where'>Aisle 4</span>" },
+        { id: "cinnamon", html: "Badia Cinnamon Sticks — 1 jar<span class='where'>Aisle 1</span>" },
+        { id: "vanilla", html: "Private Selection Pure Vanilla Extract — 1 bottle<span class='where'>Aisle 4</span>" },
+        { id: "eggs", html: "Eggland's Best Large Eggs — " + state.eggDozens + " dozen<span class='where'>Dairy</span>" }
       ];
       const lis = items.map(function (it) {
         const on = !!checked[it.id];
@@ -939,9 +1021,8 @@ input:focus, button:focus-visible {
         "</div>" +
         "<div class='block shop'>" +
           "<h2>Shopping list</h2>" +
-          "<p class='store'>" + HT + ". Prices as of Oct 10, 2026. Bourbon is at the ABC store; everything else is at this Harris Teeter.</p>" +
+          "<p class='store'>" + HT + ". Bourbon is at the ABC store; everything else is at this Harris Teeter.</p>" +
           "<ul class='shop-list'>" + lis + "</ul>" +
-          "<p class='total'>Harris Teeter estimate (no bourbon): " + money(state.grocery) + "</p>" +
         "</div>" +
         "<div class='block recipe'>" +
           "<h2>Jalapeño agave syrup</h2>" +
@@ -969,17 +1050,81 @@ input:focus, button:focus-visible {
     let drinks = [];
     let heat = "medium";
     let spiritFilter = "";
+    let placeFilter = "";
     let surpriseSpirit = "";
     let lastSurprise = "";
     let currentDrink = null;
     let lastFocus = null;
+    let sheetScale = 1;
+
+    function parseQty(s) {
+      s = String(s).trim();
+      const mixed = s.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+      if (mixed) return +mixed[1] + (+mixed[2] / +mixed[3]);
+      const frac = s.match(/^(\d+)\/(\d+)$/);
+      if (frac) return +frac[1] / +frac[2];
+      const n = Number(s);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function formatQty(n) {
+      const r = Math.round(n * 8) / 8;
+      const w = Math.floor(r + 1e-9);
+      const f = Math.round((r - w) * 8) / 8;
+      const map = { 0: "", 0.125: "1/8", 0.25: "1/4", 0.375: "3/8", 0.5: "1/2", 0.625: "5/8", 0.75: "3/4", 0.875: "7/8" };
+      const fs = map[f];
+      if (fs === undefined) return String(Math.round(n * 100) / 100);
+      if (!w) return fs || "0";
+      return fs ? (w + " " + fs) : String(w);
+    }
+
+    function scaleUnit(unit, n) {
+      const rules = [
+        [/^(egg whites?)$/i, n === 1 ? "egg white" : "egg whites"],
+        [/^(dashes|dash)$/i, n === 1 ? "dash" : "dashes"],
+        [/^(barspoons?)$/i, n === 1 ? "barspoon" : "barspoons"],
+        [/^(sprigs?)$/i, n === 1 ? "sprig" : "sprigs"],
+        [/^(leaves|leaf)$/i, n === 1 ? "leaf" : "leaves"],
+        [/^(marshmallows?)$/i, n === 1 ? "marshmallow" : "marshmallows"]
+      ];
+      let u = unit;
+      rules.forEach(function (rule) {
+        if (rule[0].test(u)) u = u.replace(rule[0], rule[1]);
+      });
+      return u;
+    }
+
+    function scaleAmount(amount, factor) {
+      if (!amount) return "";
+      if (factor === 1) return amount;
+      const m = String(amount).trim().match(/^((?:\d+\s+)?\d+\/\d+|\d+(?:\.\d+)?)(?:\s+(.*))?$/);
+      if (!m) return amount;
+      let n = parseQty(m[1]);
+      if (n == null) return amount;
+      n = n * factor;
+      const rest = (m[2] || "").trim();
+      return (formatQty(n) + (rest ? " " + scaleUnit(rest, n) : "")).trim();
+    }
+
+    function placeLabel(place) {
+      if (!place || !place.name) return "";
+      return place.city ? (place.name + " · " + place.city) : place.name;
+    }
+
+    function mapsUrl(place) {
+      if (!place) return "";
+      if (!place.address && !place.city) return "";
+      const q = [place.name, place.address, place.city].filter(Boolean).join(", ");
+      return "https://maps.apple.com/?q=" + encodeURIComponent(q);
+    }
 
     function filtered(spirit, q) {
       q = (q || "").trim().toLowerCase();
       return drinks.filter(function (d) {
         if (spirit && d.spirit !== spirit) return false;
+        if (placeFilter && (!d.place || d.place.name !== placeFilter)) return false;
         if (!q) return true;
-        const blob = [d.name, d.ingredients, d.notes].join(" ").toLowerCase();
+        const blob = [d.name, d.ingredients, d.notes, d.garnish, placeLabel(d.place)].join(" ").toLowerCase();
         return blob.indexOf(q) !== -1;
       });
     }
@@ -1020,37 +1165,81 @@ input:focus, button:focus-visible {
         btn.className = "card";
         btn.style.setProperty("--card", st.card || "");
         btn.style.setProperty("--glow-color", (st.accent || "#e8b85a") + "44");
+        const place = placeLabel(d.place);
         btn.innerHTML =
-          "<span class='price'>$" + escapeHtml(d.price) + "</span>" +
           "<div class='card-visual'>" + glassSVG(d.name, false) + "</div>" +
           "<div class='card-meta'><h2>" + escapeHtml(d.name) + "</h2>" +
+          (place ? "<p class='place-line'>" + escapeHtml(place) + "</p>" : "") +
           "<div class='card-tags'><span class='tag'>" + escapeHtml(d.spirit) + "</span><span class='tag'>" + escapeHtml(d.type) + "</span></div></div>";
         btn.addEventListener("click", function () { openSheet(d); });
         body.appendChild(btn);
       });
     }
 
-    function openSheet(d) {
-      currentDrink = d;
-      lastFocus = document.activeElement;
+    function uniquePlaces() {
+      const seen = [];
+      drinks.forEach(function (d) {
+        const n = d.place && d.place.name;
+        if (n && seen.indexOf(n) === -1) seen.push(n);
+      });
+      return seen.sort();
+    }
+
+    function renderSheetBody(d) {
       const st = STYLE[d.name] || {};
-      const pills = d.ingredients.split(/\s*,\s*/).filter(Boolean).map(function (p) {
-        return "<span class='pill'>" + escapeHtml(p) + "</span>";
-      }).join("");
       const notes = d.notes ? "<p class='notes'>" + escapeHtml(d.notes) + "</p>" : "";
       const cta = d.name === "Whiskey Powers"
         ? "<button type='button' class='cta' id='goto-calc'>Batch this in the calculator</button>"
         : "";
+      const place = placeLabel(d.place);
+      const maps = mapsUrl(d.place);
+      const placeHtml = place
+        ? ("<p class='sheet-place'>" + escapeHtml(place) +
+           (maps ? " <a href='" + maps + "' target='_blank' rel='noopener'>Open in Maps</a>" : "") +
+           "</p>")
+        : "";
+      const glass = d.glass ? escapeHtml(d.glass.charAt(0).toUpperCase() + d.glass.slice(1)) : "";
+      const garnish = d.garnish ? escapeHtml(d.garnish) : "";
+      const recipe = Array.isArray(d.recipe) ? d.recipe : [];
+      const method = Array.isArray(d.method) ? d.method : [];
+      const rows = recipe.map(function (row) {
+        return "<li><span class='amt'>" + escapeHtml(scaleAmount(row.amount, sheetScale)) +
+          "</span><span>" + escapeHtml(row.item) + "</span></li>";
+      }).join("");
+      const steps = method.map(function (step, i) {
+        return "<li><span class='num'>" + (i + 1) + "</span><span>" + escapeHtml(step) + "</span></li>";
+      }).join("");
+      const scaleBtns = [1, 2, 4].map(function (n) {
+        return "<button type='button' data-scale='" + n + "' aria-pressed='" + (sheetScale === n ? "true" : "false") + "'>" + n + "×</button>";
+      }).join("");
       document.getElementById("sheet-body").innerHTML =
         "<div class='sheet-visual' style='--glow: " + (st.accent || "#e8b85a") + "66'>" + glassSVG(d.name, true) + "</div>" +
-        "<div class='sheet-top'><h2 id='sheet-title'>" + escapeHtml(d.name) + "</h2><div class='price-lg'>$" + escapeHtml(d.price) + "</div></div>" +
-        "<div class='card-tags' style='margin-top:10px'><span class='tag'>" + escapeHtml(d.spirit) + "</span><span class='tag'>" + escapeHtml(d.type) + "</span></div>" +
-        "<div class='pills'>" + pills + "</div>" +
+        "<div class='sheet-top'><h2 id='sheet-title'>" + escapeHtml(d.name) + "</h2></div>" +
+        "<div class='card-tags' style='margin-top:10px'><span class='tag'>" + escapeHtml(d.spirit) + "</span><span class='tag'>" + escapeHtml(d.type) + "</span><span class='home-badge'>Home recipe</span></div>" +
+        placeHtml +
+        "<p class='glass-line'><strong>Glass:</strong> " + glass +
+          (garnish ? "<br><strong>Garnish:</strong> " + garnish : "") + "</p>" +
+        "<div class='scale-row'><h3>Ingredients</h3><div class='scale' role='group' aria-label='Servings'>" + scaleBtns + "</div></div>" +
+        (rows ? "<ul class='recipe-list'>" + rows + "</ul>" : "<p class='store'>No recipe yet.</p>") +
+        (steps ? "<div class='sheet-section'><h3>Method</h3><ol class='steps'>" + steps + "</ol></div>" : "") +
         notes +
-        "<p class='source'>" + escapeHtml(d.source) + "</p>" +
+        "<p class='source'>" + escapeHtml(d.source) + ". This is our home version, not the bar's official spec.</p>" +
         cta;
+      document.querySelectorAll(".scale button").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          sheetScale = parseInt(btn.getAttribute("data-scale"), 10);
+          renderSheetBody(d);
+        });
+      });
       const ctaBtn = document.getElementById("goto-calc");
       if (ctaBtn) ctaBtn.addEventListener("click", function () { closeSheet(); showTab("calc"); });
+    }
+
+    function openSheet(d) {
+      currentDrink = d;
+      sheetScale = 1;
+      lastFocus = document.activeElement;
+      renderSheetBody(d);
       const sheet = document.getElementById("sheet");
       const backdrop = document.getElementById("backdrop");
       backdrop.hidden = false;
@@ -1127,7 +1316,7 @@ input:focus, button:focus-visible {
       }
       art.innerHTML = glassSVG(d.name, true);
       document.getElementById("surprise-name").textContent = d.name;
-      document.getElementById("surprise-sub").textContent = d.spirit + " · " + d.type + " · $" + d.price;
+      document.getElementById("surprise-sub").textContent = d.spirit + " · " + d.type + (placeLabel(d.place) ? " · " + placeLabel(d.place) : "");
       const open = document.getElementById("surprise-open");
       open.hidden = false;
       open.onclick = function () { openSheet(d); };
@@ -1208,9 +1397,33 @@ input:focus, button:focus-visible {
             paintSurpriseChips();
           });
         }
+        function paintPlaceChips() {
+          const el = document.getElementById("place-chips");
+          const places = uniquePlaces();
+          el.innerHTML = "";
+          [""].concat(places).forEach(function (s) {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = "chip";
+            b.textContent = s || "All places";
+            b.setAttribute("aria-pressed", s === placeFilter ? "true" : "false");
+            b.addEventListener("click", function () {
+              placeFilter = s;
+              paintPlaceChips();
+              renderLibrary();
+            });
+            el.appendChild(b);
+          });
+        }
         paintSpiritChips();
         paintSurpriseChips();
+        paintPlaceChips();
         renderLibrary();
+        const drinkParam = new URLSearchParams(location.search).get("drink");
+        if (drinkParam) {
+          const found = drinks.find(function (d) { return d.name.toLowerCase() === drinkParam.toLowerCase(); });
+          if (found) openSheet(found);
+        }
       })
       .catch(function (err) {
         document.getElementById("library-body").innerHTML =
