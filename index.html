@@ -289,13 +289,15 @@ h1.display {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.28s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 .backdrop.open { opacity: 1; pointer-events: auto; }
 .sheet {
   position: fixed;
   left: 0; right: 0; bottom: 0;
   z-index: 50;
-  max-height: min(88vh, 760px);
+  max-height: calc(100vh - env(safe-area-inset-top, 0px) - 56px);
+  max-height: calc(100dvh - env(safe-area-inset-top, 0px) - 56px);
   background: linear-gradient(180deg, #1a1d2c 0%, #0e101a 100%);
   border-radius: 24px 24px 0 0;
   border: 1px solid var(--line);
@@ -305,20 +307,34 @@ h1.display {
   transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
   display: flex;
   flex-direction: column;
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  pointer-events: none;
 }
-.sheet.open { transform: none; }
+.sheet.open { transform: none; pointer-events: auto; }
+.sheet-chrome {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  flex: 0 0 auto;
+  min-height: calc(44px + max(16px, env(safe-area-inset-top, 0px)) + 8px);
+  background: linear-gradient(180deg, #1a1d2c 80%, rgba(26, 29, 44, 0.94));
+  pointer-events: auto;
+  touch-action: none;
+}
 .grabber {
-  width: 40px;
+  width: 44px;
   height: 5px;
   border-radius: 99px;
-  background: rgba(255,255,255,0.18);
-  margin: 8px auto 4px;
+  background: rgba(255,255,255,0.28);
+  margin: 10px auto 0;
 }
 .sheet-scroll {
   overflow: auto;
   padding: 4px 20px 28px;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  flex: 1 1 auto;
 }
 .sheet-visual {
   height: 120px;
@@ -431,16 +447,28 @@ h1.display {
 }
 .close-btn {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 36px;
-  height: 36px;
+  top: max(16px, env(safe-area-inset-top, 0px));
+  right: max(12px, env(safe-area-inset-right, 0px));
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  z-index: 10;
   border: 0;
   border-radius: 50%;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.14);
   color: var(--ink);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
+.close-btn:active { background: rgba(255,255,255,0.28); }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
 .pill {
   border-radius: 999px;
@@ -827,8 +855,10 @@ input:focus, button:focus-visible {
 
   <div class="backdrop" id="backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
-    <div class="grabber" aria-hidden="true"></div>
-    <button type="button" class="close-btn" id="sheet-close" aria-label="Close">×</button>
+    <div class="sheet-chrome" id="sheet-chrome">
+      <div class="grabber" id="sheet-handle" aria-hidden="true"></div>
+      <button type="button" class="close-btn" id="sheet-close" aria-label="Close">×</button>
+    </div>
     <div class="sheet-scroll" id="sheet-body"></div>
   </div>
 
@@ -1235,34 +1265,170 @@ input:focus, button:focus-visible {
       if (ctaBtn) ctaBtn.addEventListener("click", function () { closeSheet(); showTab("calc"); });
     }
 
+    let sheetOpen = false;
+    let sheetHist = false;
+    let ignoringPop = false;
+    let hideTimer = null;
+    let lockedScrollY = 0;
+
+    function lockScroll() {
+      lockedScrollY = window.scrollY || window.pageYOffset || 0;
+      document.body.style.position = "fixed";
+      document.body.style.top = "-" + lockedScrollY + "px";
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    }
+
+    function unlockScroll() {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      window.scrollTo(0, lockedScrollY || 0);
+    }
+
     function openSheet(d) {
       currentDrink = d;
       sheetScale = 1;
-      lastFocus = document.activeElement;
+      if (!sheetOpen) lastFocus = document.activeElement;
       renderSheetBody(d);
       const sheet = document.getElementById("sheet");
       const backdrop = document.getElementById("backdrop");
+      if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+      sheet.style.transform = "";
+      sheet.style.transition = "";
       backdrop.hidden = false;
       sheet.hidden = false;
-      requestAnimationFrame(function () {
-        backdrop.classList.add("open");
-        sheet.classList.add("open");
-      });
-      document.getElementById("sheet-close").focus();
+      if (!sheetOpen) {
+        sheetOpen = true;
+        lockScroll();
+        requestAnimationFrame(function () {
+          backdrop.classList.add("open");
+          sheet.classList.add("open");
+        });
+        if (!history.state || !history.state.drinkSheet) {
+          history.pushState({ drinkSheet: true, drink: d.name }, "", location.href);
+          sheetHist = true;
+        }
+      }
     }
 
-    function closeSheet() {
+    function closeSheet(fromPop) {
+      if (!sheetOpen) return;
+      sheetOpen = false;
       const sheet = document.getElementById("sheet");
       const backdrop = document.getElementById("backdrop");
+      sheet.style.transform = "";
+      sheet.style.transition = "";
       sheet.classList.remove("open");
       backdrop.classList.remove("open");
+      unlockScroll();
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      setTimeout(function () {
+      if (hideTimer) clearTimeout(hideTimer);
+      hideTimer = setTimeout(function () {
+        if (sheetOpen) return;
         sheet.hidden = true;
         backdrop.hidden = true;
+        hideTimer = null;
       }, reduce ? 0 : 320);
       currentDrink = null;
-      if (lastFocus && lastFocus.focus) lastFocus.focus();
+      if (lastFocus && lastFocus.focus) {
+        try { lastFocus.focus({ preventScroll: true }); } catch (err) { lastFocus.focus(); }
+      }
+      if (!fromPop && sheetHist) {
+        ignoringPop = true;
+        sheetHist = false;
+        history.back();
+      } else {
+        sheetHist = false;
+      }
+    }
+
+    function setupSheetGestures() {
+      const sheet = document.getElementById("sheet");
+      const chrome = document.getElementById("sheet-chrome");
+      const scroll = document.getElementById("sheet-body");
+      let startY = 0, startX = 0, dragging = false, armed = false, dy = 0, fromScroll = false;
+
+      function resetDragStyle() {
+        sheet.style.transition = "";
+        sheet.style.transform = "";
+        scroll.style.overflow = "";
+      }
+
+      function begin(y, x, viaScroll, target) {
+        if (!sheetOpen) return;
+        if (target && target.closest && target.closest("#sheet-close")) return;
+        startY = y;
+        startX = x;
+        dy = 0;
+        dragging = true;
+        armed = !viaScroll;
+        fromScroll = viaScroll;
+        if (armed) sheet.style.transition = "none";
+      }
+
+      function move(y, x) {
+        if (!dragging || !sheetOpen) return;
+        const my = y - startY;
+        const mx = x - startX;
+        if (fromScroll && !armed) {
+          if (scroll.scrollTop > 0 || my < 0) return;
+          if (my > 10 && my > Math.abs(mx)) {
+            armed = true;
+            scroll.style.overflow = "hidden";
+            sheet.style.transition = "none";
+          } else {
+            return;
+          }
+        }
+        if (!armed) return;
+        dy = Math.max(0, my);
+        sheet.style.transform = "translateY(" + dy + "px)";
+      }
+
+      function end() {
+        if (!dragging) return;
+        dragging = false;
+        const shouldClose = armed && dy > 80;
+        armed = false;
+        scroll.style.overflow = "";
+        if (shouldClose) {
+          closeSheet();
+        } else {
+          resetDragStyle();
+        }
+        dy = 0;
+      }
+
+      function bind(el, viaScroll) {
+        el.addEventListener("touchstart", function (e) {
+          if (!e.touches || !e.touches[0]) return;
+          begin(e.touches[0].clientY, e.touches[0].clientX, viaScroll, e.target);
+        }, { passive: true });
+        el.addEventListener("touchmove", function (e) {
+          if (!e.touches || !e.touches[0]) return;
+          move(e.touches[0].clientY, e.touches[0].clientX);
+        }, { passive: true });
+        el.addEventListener("touchend", end);
+        el.addEventListener("touchcancel", end);
+        el.addEventListener("pointerdown", function (e) {
+          if (e.pointerType === "mouse" && e.button !== 0) return;
+          begin(e.clientY, e.clientX, viaScroll, e.target);
+        });
+      }
+
+      window.addEventListener("pointermove", function (e) {
+        if (dragging) move(e.clientY, e.clientX);
+      });
+      window.addEventListener("pointerup", end);
+      window.addEventListener("pointercancel", end);
+      bind(chrome, false);
+      bind(scroll, true);
     }
 
     const HEAD = {
@@ -1364,11 +1530,22 @@ input:focus, button:focus-visible {
       if (label) label.classList.toggle("done", e.target.checked);
     });
     document.getElementById("shake-btn").addEventListener("click", shakeIt);
-    document.getElementById("backdrop").addEventListener("click", closeSheet);
-    document.getElementById("sheet-close").addEventListener("click", closeSheet);
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && document.getElementById("sheet").classList.contains("open")) closeSheet();
+    document.getElementById("backdrop").addEventListener("click", function (e) {
+      if (e.target === document.getElementById("backdrop")) closeSheet();
     });
+    document.getElementById("sheet-close").addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeSheet();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && sheetOpen) closeSheet();
+    });
+    window.addEventListener("popstate", function () {
+      if (ignoringPop) { ignoringPop = false; return; }
+      if (sheetOpen) closeSheet(true);
+    });
+    setupSheetGestures();
 
     renderCalc(calculateBatch(5, "medium"));
     setStageDrink(null);

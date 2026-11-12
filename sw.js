@@ -1,4 +1,4 @@
-const CACHE = "drink-library-v3";
+const CACHE = "drink-library-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -59,6 +59,10 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin === location.origin) {
+    const dest = event.request.destination;
+    const isHtml = event.request.mode === "navigate" || dest === "document" ||
+      /(?:\/|index\.html)$/.test(url.pathname);
+    // Always network-first for the app shell so installed PWAs pick up fixes.
     event.respondWith(networkFirst(event.request));
     return;
   }
