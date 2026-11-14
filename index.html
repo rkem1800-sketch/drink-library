@@ -934,14 +934,28 @@ input:focus, button:focus-visible {
       "Smoked Old Fashioned": { glass: "rocks", liquid: "#a86820", ice: "cube", accent: "#d4a060", card: "linear-gradient(165deg,#22180c 0%,#0e0a08 100%)" },
       "Aperol Spritz": { glass: "highball", liquid: "#e07030", accent: "#f09050", card: "linear-gradient(165deg,#2a160c 0%,#140a08 100%)" },
       "Mojito": { glass: "highball", liquid: "#6aaa6a", accent: "#9ad49a", card: "linear-gradient(165deg,#102418 0%,#0a140e 100%)" },
-      "Feeling Peachy": { glass: "rocks", liquid: "#e08a50", ice: "cube", accent: "#f0b070", card: "linear-gradient(165deg,#2a1a10 0%,#140c08 100%)" }
+      "Feeling Peachy": { glass: "rocks", liquid: "#e08a50", ice: "cube", accent: "#f0b070", card: "linear-gradient(165deg,#2a1a10 0%,#140c08 100%)" },
+      "Old Fashioned": { glass: "rocks", liquid: "#c8882a", ice: "cube", accent: "#e8b85a", card: "linear-gradient(165deg,#2a1c0e 0%,#120e08 100%)" },
+      "Manhattan": { glass: "coupe", liquid: "#8a2a22", accent: "#d46a3a", card: "linear-gradient(165deg,#2a1412 0%,#12090a 100%)" },
+      "Whiskey Sour": { glass: "coupe", liquid: "#e0c878", foam: "#f4efe4", accent: "#e8d48a", card: "linear-gradient(165deg,#2a2410 0%,#121008 100%)" },
+      "Bobby Burns": { glass: "coupe", liquid: "#a86820", accent: "#d4a060", card: "linear-gradient(165deg,#22180c 0%,#0e0a08 100%)" },
+      "Brown Derby": { glass: "coupe", liquid: "#e08a50", accent: "#f0b070", card: "linear-gradient(165deg,#2a1a10 0%,#140c08 100%)" },
+      "Scofflaw": { glass: "coupe", liquid: "#c45a3a", accent: "#e08060", card: "linear-gradient(165deg,#2a1410 0%,#120808 100%)" },
+      "Lion's Tale": { glass: "coupe", liquid: "#c46a1e", accent: "#e08a30", card: "linear-gradient(165deg,#2a180c 0%,#120c08 100%)" },
+      "Sidecar": { glass: "coupe", liquid: "#e0c070", accent: "#f0d48a", card: "linear-gradient(165deg,#2a2010 0%,#141008 100%)" },
+      "Sazerac": { glass: "rocks", liquid: "#a85818", ice: "cube", accent: "#d4892a", card: "linear-gradient(165deg,#24180c 0%,#100c08 100%)" },
+      "Suffering Bastard": { glass: "highball", liquid: "#d4a04a", accent: "#e8c878", card: "linear-gradient(165deg,#241c10 0%,#100c08 100%)" },
+      "Vieux Carré": { glass: "rocks", liquid: "#8a3a1e", ice: "cube", accent: "#c46a3a", card: "linear-gradient(165deg,#2a1410 0%,#120808 100%)" },
+      "Daiquiri": { glass: "coupe", liquid: "#c8e06a", accent: "#dce86a", card: "linear-gradient(165deg,#1a2410 0%,#0c1408 100%)" },
+      "Dark & Stormy": { glass: "highball", liquid: "#5c2a14", accent: "#c46a2a", card: "linear-gradient(165deg,#1c100c 0%,#0c0808 100%)" }
     };
 
     function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
 
+    let svgSeq = 0;
     function glassSVG(name, tall) {
       const st = STYLE[name] || { glass: "coupe", liquid: "#c8882a" };
-      const id = slug(name) + (tall ? "-lg" : "");
+      const id = slug(name) + (tall ? "-lg" : "") + "-" + (++svgSeq);
       const liq = st.liquid;
       const stroke = "#e8d5a8";
       const glassFill = "rgba(255,255,255,0.05)";

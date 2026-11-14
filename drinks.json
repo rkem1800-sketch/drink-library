@@ -991,5 +991,550 @@
       "Pour over ice in a rocks glass."
     ],
     "garnish": "A cherry and an orange slice"
+  },
+  {
+    "name": "Old Fashioned",
+    "spirit": "Whiskey",
+    "ingredients": "George Dickel 8 Year, simple syrup, Angostura bitters, orange bitters",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "George Dickel 8 Year Tennessee whiskey"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "orange bitters"
+      }
+    ],
+    "method": [
+      "Stir the whiskey, simple syrup, and both bitters with ice for 20–30 seconds.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Orange twist"
+  },
+  {
+    "name": "Manhattan",
+    "spirit": "Rye",
+    "ingredients": "High West rye, Carpano Antica, orange bitters, Angostura bitters",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. Served up.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "High West rye"
+      },
+      {
+        "amount": "1 oz",
+        "item": "Carpano Antica sweet vermouth"
+      },
+      {
+        "amount": "1 dash",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "1 dash",
+        "item": "orange bitters"
+      }
+    ],
+    "method": [
+      "Stir the rye, Carpano Antica, and both bitters with ice for 20–30 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Brandied cherry, or an orange twist"
+  },
+  {
+    "name": "Whiskey Sour",
+    "spirit": "Bourbon",
+    "ingredients": "Basil Hayden, lemon juice, simple syrup, egg white, Angostura bitters",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Basil Hayden bourbon"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "1",
+        "item": "egg white"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      }
+    ],
+    "method": [
+      "Dry-shake the bourbon, lemon, simple syrup, and egg white for 15 seconds.",
+      "Add ice and shake 15 seconds more.",
+      "Strain into a chilled coupe.",
+      "Dot the foam with Angostura bitters and drag a toothpick through for a simple design, if you like."
+    ],
+    "garnish": "Angostura drops on the foam, or a lemon wheel"
+  },
+  {
+    "name": "Bobby Burns",
+    "spirit": "Scotch",
+    "ingredients": "Dewar's 12 Year, Carpano Antica, Bénédictine, Peychaud's bitters",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Dewar's 12 Year blended Scotch"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Carpano Antica sweet vermouth"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "Bénédictine"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Peychaud's bitters"
+      }
+    ],
+    "method": [
+      "Stir the Scotch, Carpano Antica, Bénédictine, and Peychaud's with ice for 20–30 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Lemon twist"
+  },
+  {
+    "name": "Brown Derby",
+    "spirit": "Whiskey",
+    "ingredients": "George Dickel 8 Year, grapefruit juice, honey",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. Honey syrup is 1:1 honey and warm water, stirred until dissolved.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "George Dickel 8 Year Tennessee whiskey"
+      },
+      {
+        "amount": "1 oz",
+        "item": "fresh grapefruit juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "honey syrup (1:1 honey and water)"
+      }
+    ],
+    "method": [
+      "Shake the whiskey, grapefruit juice, and honey syrup with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Grapefruit twist"
+  },
+  {
+    "name": "Scofflaw",
+    "spirit": "Rye",
+    "ingredients": "Bulleit Rye, dry vermouth, grenadine, lemon juice",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Bulleit Rye"
+      },
+      {
+        "amount": "1 oz",
+        "item": "dry vermouth"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "grenadine"
+      }
+    ],
+    "method": [
+      "Shake the rye, dry vermouth, lemon juice, and grenadine with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Lemon twist"
+  },
+  {
+    "name": "Lion's Tale",
+    "spirit": "Bourbon",
+    "ingredients": "Woodford Reserve, allspice dram, orange juice, lemon juice, honey",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. This is a Lion's Tail built with the menu's orange, lemon, and honey (the usual classic uses lime and simple syrup). Honey syrup is 1:1 honey and warm water.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Woodford Reserve bourbon"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "allspice dram"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh orange juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "honey syrup (1:1 honey and water)"
+      }
+    ],
+    "method": [
+      "Shake the bourbon, allspice dram, orange juice, lemon juice, and honey syrup with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Orange twist, or a dusting of grated nutmeg"
+  },
+  {
+    "name": "Sidecar",
+    "spirit": "Cognac",
+    "ingredients": "Courvoisier, Cointreau, lemon juice, sugar rim",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Courvoisier cognac"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Cointreau"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      }
+    ],
+    "method": [
+      "Rim a chilled coupe with sugar (run a lemon wedge around the edge, then dip in sugar).",
+      "Shake the cognac, Cointreau, and lemon juice with ice for 15 seconds.",
+      "Strain into the rimmed coupe."
+    ],
+    "garnish": "Sugar rim, and a lemon twist if you like"
+  },
+  {
+    "name": "Sazerac",
+    "spirit": "Cognac",
+    "ingredients": "Rémy Martin, Sazerac Rye, simple syrup, Peychaud's bitters",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu lists both Rémy Martin and Sazerac Rye, so this is a split-base classic. An absinthe or Herbsaint rinse is traditional even if it wasn't printed on the menu.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1 1/4 oz",
+        "item": "Sazerac Rye"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Rémy Martin cognac"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "4 dashes",
+        "item": "Peychaud's bitters"
+      },
+      {
+        "amount": "1 rinse",
+        "item": "absinthe or Herbsaint (traditional)"
+      }
+    ],
+    "method": [
+      "Rinse a chilled rocks glass with absinthe or Herbsaint and discard the excess (skip only if you don't have it).",
+      "Stir the rye, cognac, simple syrup, and Peychaud's with ice for 20–30 seconds.",
+      "Strain into the rinsed glass, with no ice."
+    ],
+    "garnish": "Lemon twist, expressed over the drink and dropped in or perched on the rim"
+  },
+  {
+    "name": "Suffering Bastard",
+    "spirit": "Cognac",
+    "ingredients": "Rémy Martin, Tanqueray, lime juice, simple syrup, Angostura bitters, ginger beer",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Rémy Martin cognac"
+      },
+      {
+        "amount": "1 oz",
+        "item": "Tanqueray gin"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "3 oz",
+        "item": "ginger beer, to top"
+      }
+    ],
+    "method": [
+      "Shake the cognac, gin, lime juice, simple syrup, and Angostura with ice for 10 seconds.",
+      "Strain into a highball over fresh ice.",
+      "Top with ginger beer and give it a light stir."
+    ],
+    "garnish": "Mint sprig and a lime wheel"
+  },
+  {
+    "name": "Vieux Carré",
+    "spirit": "Cognac",
+    "ingredients": "Hennessy, Dickel rye, Bénédictine, Carpano Antica",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. Peychaud's and Angostura are traditional in a Vieux Carré even if they weren't listed on the menu.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Hennessy cognac"
+      },
+      {
+        "amount": "1 oz",
+        "item": "George Dickel rye"
+      },
+      {
+        "amount": "1 oz",
+        "item": "Carpano Antica sweet vermouth"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "Bénédictine"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Peychaud's bitters (traditional)"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters (traditional)"
+      }
+    ],
+    "method": [
+      "Stir the cognac, rye, Carpano Antica, Bénédictine, and both bitters with ice for 20–30 seconds.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Lemon twist, or a brandied cherry"
+  },
+  {
+    "name": "Mojito",
+    "spirit": "Rum",
+    "ingredients": "Bacardi, lime juice, mint, simple syrup, club soda",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Bacardi white rum"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "8",
+        "item": "fresh mint leaves"
+      },
+      {
+        "amount": "2 oz",
+        "item": "club soda, to top"
+      }
+    ],
+    "method": [
+      "Gently muddle the mint with the lime juice and simple syrup in a shaker (don't shred the leaves).",
+      "Add the rum and ice, and shake briefly.",
+      "Pour into a highball over fresh ice and top with club soda.",
+      "Give it a light stir."
+    ],
+    "garnish": "A mint sprig and a lime wheel"
+  },
+  {
+    "name": "Daiquiri",
+    "spirit": "Rum",
+    "ingredients": "Bacardi, lime juice, simple syrup",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Bacardi white rum"
+      },
+      {
+        "amount": "1 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "simple syrup"
+      }
+    ],
+    "method": [
+      "Shake the rum, lime juice, and simple syrup with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Lime wheel, or no garnish"
+  },
+  {
+    "name": "Dark & Stormy",
+    "spirit": "Rum",
+    "ingredients": "Gosling's rum, lime juice, simple syrup, Fever-Tree ginger beer",
+    "type": "Classic",
+    "source": "Bar menu photo, The 800° Lounge",
+    "notes": "Home recipe — our version, not the bar's official spec. A traditional Dark 'n' Stormy is Gosling's Black Seal and ginger beer; the lime and simple here follow the menu.",
+    "place": {
+      "name": "The 800° Lounge (800° SouthPark)",
+      "city": "Charlotte, NC",
+      "address": "6815 Phillips Place Court, Charlotte, NC 28210"
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Gosling's Black Seal rum"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "4 oz",
+        "item": "Fever-Tree ginger beer, to top"
+      }
+    ],
+    "method": [
+      "Build the rum, lime juice, and simple syrup in a highball over ice.",
+      "Top with Fever-Tree ginger beer and give it a light stir."
+    ],
+    "garnish": "Lime wheel or wedge"
   }
 ]
