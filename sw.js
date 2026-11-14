@@ -1,4 +1,4 @@
-const CACHE = "drink-library-v6";
+const CACHE = "drink-library-v7";
 const ASSETS = [
   "./",
   "./index.html",

@@ -1536,5 +1536,424 @@
       "Top with Fever-Tree ginger beer and give it a light stir."
     ],
     "garnish": "Lime wheel or wedge"
+  },
+  {
+    "name": "Members Only",
+    "spirit": "Bourbon",
+    "ingredients": "Urban Oak private selection Buffalo Trace, Aperol, strawberry, lime, rhubarb bitters",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. The bar uses an Urban Oak private-selection Buffalo Trace; regular Buffalo Trace works at home.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Buffalo Trace bourbon (Urban Oak private selection, or regular Buffalo Trace)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Aperol"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "strawberry syrup (or 3 muddled strawberries + 1/4 oz simple syrup)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "rhubarb bitters"
+      }
+    ],
+    "method": [
+      "If you need strawberry syrup, simmer 1 cup chopped strawberries with 1 cup sugar and 1 cup water for about 8 minutes, then strain and cool.",
+      "Shake the bourbon, Aperol, strawberry syrup, lime, and rhubarb bitters with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "A strawberry slice, or a thin lime wheel"
+  },
+  {
+    "name": "Thyme Warp",
+    "spirit": "Gin",
+    "ingredients": "Gray Whale gin, Italicus, thyme, lemon, Angostura bitters, pink peppercorn, aquafaba",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. Aquafaba is the liquid from a can of chickpeas; 3/4 oz stands in for one egg white.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Gray Whale gin"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Italicus bergamot liqueur"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "thyme syrup"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "6",
+        "item": "pink peppercorns, lightly cracked"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "aquafaba"
+      }
+    ],
+    "method": [
+      "Make thyme syrup: simmer 1/2 cup sugar, 1/2 cup water, and 6 thyme sprigs for 5 minutes, then cool and strain. If you're in a hurry, skip the syrup and clap 3 thyme sprigs in the shaker with 1/2 oz simple syrup instead.",
+      "Dry-shake the gin, Italicus, thyme syrup, lemon, Angostura, cracked pink peppercorns, and aquafaba for 15 seconds.",
+      "Add ice and shake 15 seconds more.",
+      "Double-strain into a chilled coupe."
+    ],
+    "garnish": "A thyme sprig and a few cracked pink peppercorns"
+  },
+  {
+    "name": "Espresso Yourself",
+    "spirit": "Vodka",
+    "ingredients": "Wheatley vodka, espresso, Borghetti, vanilla, lemon zest",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. Borghetti is an espresso liqueur; another coffee liqueur works if that's what you have.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Wheatley vodka"
+      },
+      {
+        "amount": "1 oz",
+        "item": "fresh espresso, cooled slightly"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Caffè Borghetti"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "vanilla syrup"
+      }
+    ],
+    "method": [
+      "Make vanilla syrup by stirring 1/2 tsp vanilla extract into 1/2 cup simple syrup (or simmer 1/2 cup sugar and 1/2 cup water with a split vanilla bean, then cool and strain).",
+      "Shake the vodka, espresso, Borghetti, and vanilla syrup hard with ice for 15 seconds, until frothy.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "Lemon zest, expressed over the foam"
+  },
+  {
+    "name": "The Final Word Is Yours",
+    "spirit": "Mezcal",
+    "ingredients": "Mezcal or gin, Luxardo maraschino, Faccia Brutto Centerbe, lime",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu lets you choose mezcal or gin; this equal-parts Last Word riff works with either. Faccia Brutto Centerbe stands in for the herbal Chartreuse role.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "3/4 oz",
+        "item": "mezcal or gin"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Luxardo maraschino liqueur"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Faccia Brutto Centerbe"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      }
+    ],
+    "method": [
+      "Shake the mezcal or gin, Luxardo, Centerbe, and lime with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "A lime twist, or a brandied cherry"
+  },
+  {
+    "name": "Not Your Basic B****",
+    "spirit": "Vodka",
+    "ingredients": "Vanilla vodka, Banane du Brésil, lemon, green cardamom bitters",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "vanilla vodka"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Giffard Banane du Brésil"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "green cardamom bitters"
+      }
+    ],
+    "method": [
+      "Shake the vanilla vodka, Banane du Brésil, lemon, and cardamom bitters with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "A thin banana chip or slice, or a lemon twist"
+  },
+  {
+    "name": "Millions of Peaches",
+    "spirit": "Pisco",
+    "ingredients": "Pinot grigio, pisco, Giffard Pêche, peach, orange, lemon, Fever-Tree ginger beer, peach bitters",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "pinot grigio"
+      },
+      {
+        "amount": "1 oz",
+        "item": "pisco"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Giffard Pêche de Vigne"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "peach purée or peach syrup"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh orange juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "peach bitters"
+      },
+      {
+        "amount": "3 oz",
+        "item": "Fever-Tree ginger beer, to top"
+      }
+    ],
+    "method": [
+      "If you need peach syrup, simmer 1 cup chopped ripe peach with 1 cup sugar and 1 cup water for about 8 minutes, then strain and cool. Peach purée also works.",
+      "Shake the pinot grigio, pisco, Giffard Pêche, peach purée or syrup, orange, lemon, and peach bitters with ice for 10 seconds.",
+      "Strain into a highball over fresh ice, top with Fever-Tree ginger beer, and give it a light stir."
+    ],
+    "garnish": "A peach slice or an orange wheel"
+  },
+  {
+    "name": "Play With Fire (Old Fashioned)",
+    "spirit": "Bourbon",
+    "ingredients": "Elijah Craig, serrano hot honey, tiki bitters, orange zest",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. RK already keeps Elijah Craig at home. Serrano hot honey: gently warm 1/2 cup honey with 1 sliced serrano (seeds in for more heat) for 5 minutes, steep 10 minutes off the heat, then strain. Thin with a splash of hot water if it's too thick to pour.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Elijah Craig bourbon"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "serrano hot honey"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "tiki bitters"
+      }
+    ],
+    "method": [
+      "Make the serrano hot honey (see notes) and let it cool.",
+      "Stir the bourbon, serrano hot honey, and tiki bitters with ice for 20–30 seconds.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Orange zest, expressed over the drink"
+  },
+  {
+    "name": "Mezspressogroni",
+    "spirit": "Mezcal",
+    "ingredients": "Banhez mezcal, Campari, Borghetti, Cocchi Torino, orange zest",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. A mezcal Negroni with a little espresso liqueur. Borghetti is an espresso liqueur; Cocchi Torino is sweet vermouth (Cocchi Vermouth di Torino).",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1 oz",
+        "item": "Banhez mezcal"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Campari"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Cocchi Vermouth di Torino"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Caffè Borghetti"
+      }
+    ],
+    "method": [
+      "Stir the mezcal, Campari, Cocchi Torino, and Borghetti with ice for 20–30 seconds.",
+      "Strain over one big cube in a rocks glass."
+    ],
+    "garnish": "Orange zest, expressed over the drink"
+  },
+  {
+    "name": "Tastes Like Beach",
+    "spirit": "Rum",
+    "ingredients": "Planteray coconut rum, Strega, cinnamon, pineapple, lime, tiki bitters, Angostura bitters, mint",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. Planteray is the current name for Plantation rum.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "highball",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Planteray coconut rum"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Strega"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "cinnamon syrup"
+      },
+      {
+        "amount": "1 oz",
+        "item": "pineapple juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "tiki bitters"
+      },
+      {
+        "amount": "1 dash",
+        "item": "Angostura bitters"
+      }
+    ],
+    "method": [
+      "Make cinnamon syrup: simmer 1/2 cup sugar, 1/2 cup water, and 2 cinnamon sticks for 5 minutes, then cool and strain.",
+      "Shake the rum, Strega, cinnamon syrup, pineapple, lime, and both bitters with ice for 15 seconds.",
+      "Strain into a highball over fresh ice."
+    ],
+    "garnish": "A mint sprig and a pineapple or lime wedge"
+  },
+  {
+    "name": "Pinky's Up",
+    "spirit": "Spirit-free",
+    "ingredients": "Lyre's Pink gin, strawberry, vanilla, habanero agave, lemon, aquafaba",
+    "type": "Original",
+    "source": "Bar menu photo, Urban Oak originals",
+    "notes": "Home recipe — our version, not the bar's official spec. A spirit-free / mocktail. Lyre's Pink London Spirit is the non-alcoholic pink gin; aquafaba (chickpea liquid) stands in for egg white.",
+    "place": {
+      "name": "Urban Oak",
+      "city": ""
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Lyre's Pink London Spirit (non-alcoholic pink gin)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "strawberry syrup"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "vanilla syrup"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "habanero agave syrup"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "aquafaba"
+      }
+    ],
+    "method": [
+      "Strawberry syrup: simmer 1 cup chopped strawberries with 1 cup sugar and 1 cup water for about 8 minutes, then strain and cool.",
+      "Vanilla syrup: stir 1/2 tsp vanilla extract into 1/2 cup simple syrup.",
+      "Habanero agave: simmer 1/2 cup agave, 1/2 cup water, and 1/2 sliced habanero (seeds in for more heat) for 5 minutes, then cool and strain. Start with half a pepper — it's hot.",
+      "Dry-shake the Lyre's, strawberry syrup, vanilla syrup, habanero agave, lemon, and aquafaba for 15 seconds.",
+      "Add ice and shake 15 seconds more.",
+      "Double-strain into a chilled coupe."
+    ],
+    "garnish": "A strawberry slice, or a thin lemon wheel"
   }
 ]
