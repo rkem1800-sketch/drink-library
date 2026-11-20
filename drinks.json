@@ -1965,5 +1965,714 @@
       "Double-strain into a chilled coupe."
     ],
     "garnish": "A strawberry slice, or a thin lemon wheel"
+  },
+  {
+    "name": "Sidecar",
+    "spirit": "Cognac",
+    "ingredients": "Courvoisier VS, Grand Marnier, lemon juice, orange peel, sugar rim",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. This bar's Sidecar uses Courvoisier VS and Grand Marnier, and is served up with a sugar rim and orange peel.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Courvoisier VS cognac"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Grand Marnier"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      }
+    ],
+    "method": [
+      "Rim a chilled coupe with sugar (run a lemon or orange wedge around the edge, then dip in sugar).",
+      "Shake the cognac, Grand Marnier, and lemon juice with ice for 15 seconds.",
+      "Strain into the rimmed coupe."
+    ],
+    "garnish": "Sugar rim and an orange peel, expressed over the drink"
+  },
+  {
+    "name": "Sumptuous Sidecar",
+    "spirit": "Cognac",
+    "ingredients": "Rémy Martin 1738 (premium Sidecar), Grand Marnier, lemon juice, orange peel, sugar rim",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu lists only Rémy Martin 1738 as a premium Sidecar, so this uses the same Grand Marnier, lemon, sugar rim, and orange peel as the house Sidecar, with 1738 in place of Courvoisier VS.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Rémy Martin 1738 Accord Royal"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "Grand Marnier"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      }
+    ],
+    "method": [
+      "Rim a chilled coupe with sugar.",
+      "Shake the Rémy Martin 1738, Grand Marnier, and lemon juice with ice for 15 seconds.",
+      "Strain into the rimmed coupe."
+    ],
+    "garnish": "Sugar rim and an orange peel, expressed over the drink"
+  },
+  {
+    "name": "Fancy Old Fashioned",
+    "spirit": "Rye",
+    "ingredients": "Bulleit rye whiskey, Luxardo cherry, simple syrup, Angostura bitters, orange peel",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Bulleit rye whiskey"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "1",
+        "item": "Luxardo cherry"
+      }
+    ],
+    "method": [
+      "Stir the rye, simple syrup, and Angostura with ice for 20–30 seconds.",
+      "Strain over one big cube in a rocks glass.",
+      "Express an orange peel over the drink and drop it in with the Luxardo cherry."
+    ],
+    "garnish": "Orange peel and a Luxardo cherry"
+  },
+  {
+    "name": "Sazerac",
+    "spirit": "Rye",
+    "ingredients": "Michter's rye whiskey, absinthe, Peychaud's bitters, simple syrup, lemon peel",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. This bar's Sazerac is all Michter's rye (no cognac split) and is served up.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Michter's rye whiskey"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "4 dashes",
+        "item": "Peychaud's bitters"
+      },
+      {
+        "amount": "1 rinse",
+        "item": "absinthe"
+      }
+    ],
+    "method": [
+      "Rinse a chilled coupe with absinthe and discard the excess.",
+      "Stir the rye, simple syrup, and Peychaud's with ice for 20–30 seconds.",
+      "Strain into the rinsed coupe."
+    ],
+    "garnish": "Lemon peel, expressed over the drink and dropped in or perched on the rim"
+  },
+  {
+    "name": "Smash & Grab",
+    "spirit": "Bourbon",
+    "ingredients": "Larceny bourbon, simple syrup, mint, flat water, lemon juice, shaved ice",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Larceny bourbon"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "simple syrup"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "8–10",
+        "item": "fresh mint leaves"
+      },
+      {
+        "amount": "1 oz",
+        "item": "flat (still) water"
+      },
+      {
+        "amount": "as needed",
+        "item": "shaved ice, to pack the glass"
+      }
+    ],
+    "method": [
+      "In a shaker, gently press the mint with the simple syrup — don't shred the leaves.",
+      "Add the bourbon and lemon juice, then shake briefly with a little ice.",
+      "Pack a rocks glass with shaved ice (crushed ice is fine if you don't have a shaver).",
+      "Strain over the shaved ice, top with the flat water, and swizzle once to mix.",
+      "Add more shaved ice to mound the top."
+    ],
+    "garnish": "A fresh mint sprig, slapped to wake up the aroma"
+  },
+  {
+    "name": "Paloma",
+    "spirit": "Tequila",
+    "ingredients": "Espolon silver tequila, lime, grapefruit soda",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. Jarritos grapefruit, Squirt, or fresh grapefruit juice topped with soda all work.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Espolon silver tequila"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "4 oz",
+        "item": "grapefruit soda"
+      }
+    ],
+    "method": [
+      "Build the tequila and lime over ice in a rocks glass.",
+      "Top with grapefruit soda and give it a short, gentle stir."
+    ],
+    "garnish": "A lime wheel or wedge"
+  },
+  {
+    "name": "Mully Pom Cider",
+    "spirit": "Cider",
+    "ingredients": "Ginger liqueur, pomegranate juice, mulled cranberry syrup, orange, Molley Chomper hard cider",
+    "type": "Seasonal",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Molley Chomper is a North Carolina hard cider; a dry local cider can stand in. Domaine de Canton or another ginger liqueur works for the ginger.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1/2 oz",
+        "item": "ginger liqueur (Domaine de Canton or similar)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "pomegranate juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "mulled cranberry syrup"
+      },
+      {
+        "amount": "4 oz",
+        "item": "Molley Chomper hard cider (or a dry hard cider)"
+      }
+    ],
+    "method": [
+      "Mulled cranberry syrup: simmer 1 cup cranberry juice (or 1 cup cranberries plus 1/2 cup water) with 1/2 cup sugar, 1 cinnamon stick, 3 cloves, and a strip of orange peel for about 10 minutes. Strain and cool.",
+      "Build the ginger liqueur, pomegranate juice, and mulled cranberry syrup over ice in a rocks glass.",
+      "Top with the hard cider and stir once."
+    ],
+    "garnish": "An orange wheel or a wide orange peel"
+  },
+  {
+    "name": "Fig Gin Punch",
+    "spirit": "Gin",
+    "ingredients": "Sutler's gin, fig molasses, cream, orange bitters, whipped cream, grated nutmeg, shaved ice",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Sutler's gin is a North Carolina gin; a floral London dry can stand in. Fig molasses is house-made — see the method.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Sutler's gin"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fig molasses"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "cream"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "orange bitters"
+      },
+      {
+        "amount": "as needed",
+        "item": "shaved ice, to pack the glass"
+      }
+    ],
+    "method": [
+      "Fig molasses: simmer 4 chopped dried figs (or 3 tbsp fig jam) with 2 tbsp molasses, 2 tbsp brown sugar, and 1/2 cup water until the fruit is soft and the liquid is thick and syrupy, about 10 minutes. Mash, strain, and cool. Keeps a week in the fridge.",
+      "Shake the gin, fig molasses, cream, and orange bitters with ice for 15 seconds.",
+      "Pack a rocks glass with shaved ice and strain the drink over it.",
+      "Top with a spoonful of lightly whipped cream and grate nutmeg over the top."
+    ],
+    "garnish": "Whipped cream and freshly grated nutmeg"
+  },
+  {
+    "name": "Cran Royale",
+    "spirit": "Whiskey",
+    "ingredients": "Crown Royal, Reed's ginger beer, mulled cranberry syrup, orange peel",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Crown Royal Canadian whisky"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "mulled cranberry syrup"
+      },
+      {
+        "amount": "4 oz",
+        "item": "Reed's ginger beer"
+      }
+    ],
+    "method": [
+      "Mulled cranberry syrup: simmer 1 cup cranberry juice (or 1 cup cranberries plus 1/2 cup water) with 1/2 cup sugar, 1 cinnamon stick, 3 cloves, and a strip of orange peel for about 10 minutes. Strain and cool.",
+      "Build the Crown Royal and mulled cranberry syrup over ice in a rocks glass.",
+      "Top with Reed's ginger beer and stir once."
+    ],
+    "garnish": "An orange peel, expressed over the drink"
+  },
+  {
+    "name": "Spicy Bloody Mary",
+    "spirit": "Vodka",
+    "ingredients": "SSG signature mix, vodka, olive, pepperoncini",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. The menu also sells an SSG Bloody Mary Mix Bottle as a retail item — that's a mix to take home, not a drink on this list. SSG is likely the restaurant group. The house mix below stands in if you don't have the bottle.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "vodka"
+      },
+      {
+        "amount": "4 oz",
+        "item": "SSG signature Bloody Mary mix (or the house mix below)"
+      }
+    ],
+    "method": [
+      "If you don't have the SSG mix, stir 1 cup tomato juice with 1/2 oz lemon juice, 1 tsp Worcestershire, 1/2 tsp prepared horseradish, a few dashes of hot sauce, a pinch of celery salt and black pepper, and a splash of pickle brine if you have it. Chill. For more heat, add a pinch of cayenne or a slice of fresh jalapeño.",
+      "Build the vodka and mix over ice in a rocks glass and stir."
+    ],
+    "garnish": "An olive and a pepperoncini"
+  },
+  {
+    "name": "Spiced Pear Martini",
+    "spirit": "Vodka",
+    "ingredients": "Grey Goose pear vodka, pear juice, Muddy River spiced rum, spiced syrup, lemon juice",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Muddy River is a North Carolina rum distillery. Grey Goose La Poire is the pear vodka; any pear vodka can stand in.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "martini",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Grey Goose La Poire (pear vodka)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "pear juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Muddy River spiced rum"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "spiced syrup"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "fresh lemon juice"
+      }
+    ],
+    "method": [
+      "Spiced syrup: simmer 1/2 cup sugar and 1/2 cup water with 1 cinnamon stick, 3 cloves, 2 allspice berries, and a thin slice of fresh ginger for about 8 minutes. Strain and cool.",
+      "Shake the pear vodka, pear juice, spiced rum, spiced syrup, and lemon juice with ice for 15 seconds.",
+      "Strain into a chilled martini glass."
+    ],
+    "garnish": "A thin pear slice, or a cinnamon stick"
+  },
+  {
+    "name": "Lemon Blossom",
+    "spirit": "Sake",
+    "ingredients": "Tensei 'Endless Summer' sake, limoncello, orange blossom water, yuzu, lavender & lemon sugar rim",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Tensei 'Endless Summer' is a junmai sake; another light, citrusy junmai can stand in. Go easy on the orange blossom water — a little goes a long way. Bottled yuzu juice is fine if you can't find fresh yuzu.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Tensei 'Endless Summer' sake (or a light junmai)"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "limoncello"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "yuzu juice"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "orange blossom water"
+      }
+    ],
+    "method": [
+      "Lavender-lemon sugar rim: stir 2 tbsp sugar with 1/2 tsp crushed dried culinary lavender and the zest of 1 lemon. Run a lemon wedge around a chilled coupe and dip the rim in the sugar.",
+      "Shake the sake, limoncello, yuzu, and orange blossom water with ice for 15 seconds.",
+      "Strain into the rimmed coupe."
+    ],
+    "garnish": "Lavender-lemon sugar rim, and a thin lemon twist if you like"
+  },
+  {
+    "name": "Purple Gimlet",
+    "spirit": "Gin",
+    "ingredients": "Conniption Kinship gin, lime juice, elderflower liqueur, simple syrup",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Conniption Kinship is a North Carolina gin from Durham Distillery; a floral gin can stand in. St-Germain or another elderflower liqueur works here.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Conniption Kinship gin"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lime juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "elderflower liqueur (St-Germain or similar)"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "simple syrup"
+      }
+    ],
+    "method": [
+      "Shake the gin, lime juice, elderflower liqueur, and simple syrup with ice for 15 seconds.",
+      "Strain into a chilled coupe."
+    ],
+    "garnish": "A thin lime wheel, or no garnish"
+  },
+  {
+    "name": "Large Marge",
+    "spirit": "Tequila",
+    "ingredients": "Tres Agaves reposado tequila, Grand Marnier, key lime syrup, house sour, lime, salt",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. Key lime syrup and house sour are house-made — see the method. Regular lime juice can stand in for key lime if needed.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "Tres Agaves reposado tequila"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "Grand Marnier"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "key lime syrup"
+      },
+      {
+        "amount": "1 oz",
+        "item": "house sour"
+      }
+    ],
+    "method": [
+      "Key lime syrup: stir 1/2 cup key lime juice (or regular lime juice) with 1/2 cup sugar and a strip of lime zest until the sugar dissolves; or warm it gently, then cool and pull the zest.",
+      "House sour: stir together 1 oz fresh lemon juice, 1 oz fresh lime juice, and 1 oz simple syrup. This batch covers a few drinks; use 1 oz in this one.",
+      "Rim a chilled coupe with salt (run a lime wedge around the edge, then dip in kosher salt).",
+      "Shake the tequila, Grand Marnier, key lime syrup, and house sour with ice for 15 seconds.",
+      "Strain into the salted coupe."
+    ],
+    "garnish": "Salt rim and a lime wheel"
+  },
+  {
+    "name": "Whiplashes",
+    "spirit": "Whiskey",
+    "ingredients": "Shanky's Whip caramel & vanilla black Irish whiskey, vanilla bean syrup, Bald Guy coffee elixir, whipped cream, butterscotch",
+    "type": "Dessert",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Shanky's Whip is a caramel-and-vanilla black Irish whiskey liqueur. Bald Guy is a coffee brand — if you can't find the elixir, use a concentrated cold brew or a coffee liqueur.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "coupe",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Shanky's Whip (caramel & vanilla black Irish whiskey)"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "vanilla bean syrup"
+      },
+      {
+        "amount": "1 oz",
+        "item": "Bald Guy coffee elixir (or strong cold brew / coffee liqueur)"
+      }
+    ],
+    "method": [
+      "Vanilla bean syrup: simmer 1/2 cup sugar and 1/2 cup water with 1 split vanilla bean for about 5 minutes (or stir 1 tsp vanilla extract into 1/2 cup simple syrup off the heat). Cool; leave the bean in the bottle if you used one.",
+      "Shake the Shanky's Whip, vanilla bean syrup, and coffee elixir with ice for 15 seconds.",
+      "Strain into a chilled coupe.",
+      "Top with a spoonful of lightly whipped cream and drizzle a little butterscotch sauce over it."
+    ],
+    "garnish": "Whipped cream and a butterscotch drizzle"
+  },
+  {
+    "name": "Candied Coffee",
+    "spirit": "Whiskey",
+    "ingredients": "Bushmills Irish whiskey, praline cream liqueur, vanilla bean syrup, cream, Bald Guy coffee, whipped cream",
+    "type": "Dessert",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu marks this (NC) — it features North Carolina artisan spirits or products. Served hot, like an Irish coffee. If you'd rather have it cold, shake everything with ice and strain into a coupe. A praline or butterscotch cream liqueur works; if you can't find one, use 1/2 oz Irish cream plus 1/4 oz butterscotch schnapps. Bald Guy coffee can be swapped for any strong hot coffee.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "mug",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "Bushmills Irish whiskey"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "praline cream liqueur"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "vanilla bean syrup"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "cream"
+      },
+      {
+        "amount": "4 oz",
+        "item": "hot Bald Guy coffee (or strong hot coffee)"
+      }
+    ],
+    "method": [
+      "Vanilla bean syrup: simmer 1/2 cup sugar and 1/2 cup water with 1 split vanilla bean for about 5 minutes (or stir 1 tsp vanilla extract into 1/2 cup simple syrup off the heat). Cool.",
+      "Warm a mug, then add the Bushmills, praline cream liqueur, vanilla bean syrup, and cream.",
+      "Top with hot coffee and stir.",
+      "Float a spoonful of lightly whipped cream on top."
+    ],
+    "garnish": "Whipped cream"
+  },
+  {
+    "name": "Earl of Fog",
+    "spirit": "Gin",
+    "ingredients": "Earl Grey tea, gin, crème de violette, honey syrup, hot water, cream, orange twist",
+    "type": "House",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. A hot tea cocktail in the London Fog family. The menu doesn't name a gin; a London dry works well with Earl Grey and violette.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "mug",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "gin (London dry)"
+      },
+      {
+        "amount": "1/4 oz",
+        "item": "crème de violette"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "honey syrup"
+      },
+      {
+        "amount": "4 oz",
+        "item": "hot Earl Grey tea"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "cream"
+      }
+    ],
+    "method": [
+      "Honey syrup: stir equal parts honey and hot water until the honey dissolves, then cool slightly.",
+      "Steep a strong cup of Earl Grey (one bag or a heaping teaspoon of loose tea in about 5 oz just-off-boil water for 3–4 minutes) and use 4 oz of it.",
+      "Warm a mug, then add the gin, crème de violette, and honey syrup.",
+      "Pour in the hot tea and stir. Float or slowly pour the cream on top."
+    ],
+    "garnish": "An orange twist, expressed over the mug"
+  },
+  {
+    "name": "Hot Toddy",
+    "spirit": "Bourbon",
+    "ingredients": "Bourbon, Angostura bitters, lemon, honey syrup, hot water",
+    "type": "Classic",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. The menu doesn't name a bourbon; use whatever you already like in a toddy.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "mug",
+    "recipe": [
+      {
+        "amount": "2 oz",
+        "item": "bourbon"
+      },
+      {
+        "amount": "2 dashes",
+        "item": "Angostura bitters"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "fresh lemon juice"
+      },
+      {
+        "amount": "1/2 oz",
+        "item": "honey syrup"
+      },
+      {
+        "amount": "4 oz",
+        "item": "hot water"
+      }
+    ],
+    "method": [
+      "Honey syrup: stir equal parts honey and hot water until the honey dissolves.",
+      "Warm a mug, then add the bourbon, Angostura, lemon juice, and honey syrup.",
+      "Top with hot water and stir."
+    ],
+    "garnish": "A lemon wheel, or a lemon twist"
+  },
+  {
+    "name": "Soused Snow Cream",
+    "spirit": "Vodka",
+    "ingredients": "Vanilla bean vodka, vanilla bean syrup, shaved ice, cream, whipped cream, nutmeg",
+    "type": "Dessert",
+    "source": "Bar menu photo, Sidecar Bar",
+    "notes": "Home recipe — our version, not the bar's official spec. A boozy snow-cream dessert you eat with a spoon. Any vanilla vodka works if you don't have a vanilla-bean one; crushed ice is fine if you can't shave it.",
+    "place": {
+      "name": "Sidecar Bar",
+      "city": "Location TBD"
+    },
+    "glass": "rocks",
+    "recipe": [
+      {
+        "amount": "1 1/2 oz",
+        "item": "vanilla bean vodka"
+      },
+      {
+        "amount": "3/4 oz",
+        "item": "vanilla bean syrup"
+      },
+      {
+        "amount": "1 oz",
+        "item": "cream"
+      },
+      {
+        "amount": "as needed",
+        "item": "shaved ice, to mound the glass"
+      }
+    ],
+    "method": [
+      "Vanilla bean syrup: simmer 1/2 cup sugar and 1/2 cup water with 1 split vanilla bean for about 5 minutes (or stir 1 tsp vanilla extract into 1/2 cup simple syrup off the heat). Cool.",
+      "Shake the vanilla vodka, vanilla bean syrup, and cream with ice for 10 seconds.",
+      "Pack a rocks glass with a mound of shaved ice and pour the drink over it.",
+      "Top with a spoonful of lightly whipped cream and grate nutmeg over the top. Serve with a spoon."
+    ],
+    "garnish": "Whipped cream, freshly grated nutmeg, and a spoon"
   }
 ]
